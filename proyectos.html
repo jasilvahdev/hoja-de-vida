@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proyectos | Juan Andrés Silva Hernández</title>
+<meta name="description" content="Hoja de vida web de Juan Andrés Silva Hernández, estudiante de Ingeniería de Software.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<header>
+ <div class="contenedor">
+  <a class="marca" href="index.html">Juan Andrés Silva</a>
+  <nav aria-label="Principal">
+   <button id="menu-btn" aria-expanded="false" aria-controls="menu">Menú</button>
+   <ul id="menu">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="formacion.html">Formación</a></li>
+    <li><a href="proyectos.html" aria-current="page">Proyectos</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+   </ul>
+  </nav>
+ </div>
+</header>
+<main class="contenedor">
+ <section>
+  <h1>Proyectos</h1>
+  <article class="proyecto">
+   <img src="img/project_1.jpg" alt="Captura del sistema de inventario del taller de suspensiones">
+   <div>
+    <h2>Sistema de inventario para un taller de suspensiones</h2>
+    <p><em>Proyecto universitario en Java (POO).</em></p>
+    <p>Aplicación de escritorio para gestionar el inventario de un taller de suspensiones automotrices. Usa <strong>herencia</strong> (Vehículo y CarroH), una clase abstracta <code>Suspension</code> con tres tipos (hidráulica, neumática y mecánica) que aplica <strong>polimorfismo</strong>, y una interfaz gráfica en Java Swing para registrar y consultar vehículos.</p>
+    <p><a href="https://github.com/jasilvahdev/inventario-taller-suspensiones">Ver el código en GitHub</a></p>
+   </div>
+  </article>
+ </section>
+</main>
+<footer>
+ <div class="contenedor">
+  <p>© <span id="anio"></span> Juan Andrés Silva Hernández. Bogotá, Colombia.</p>
+  <p><a href="https://github.com/jasilvahdev">GitHub</a> · <a href="https://www.linkedin.com/in/juan-andres-silva-hernandez-543177416/">LinkedIn</a> · <a href="mailto:juanandres.silva.dev@gmail.com">juanandres.silva.dev@gmail.com</a></p>
+ </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contacto | Juan Andrés Silva Hernández</title>
+<meta name="description" content="Hoja de vida web de Juan Andrés Silva Hernández, estudiante de Ingeniería de Software.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<header>
+ <div class="contenedor">
+  <a class="marca" href="index.html">Juan Andrés Silva</a>
+  <nav aria-label="Principal">
+   <button id="menu-btn" aria-expanded="false" aria-controls="menu">Menú</button>
+   <ul id="menu">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="formacion.html">Formación</a></li>
+    <li><a href="proyectos.html">Proyectos</a></li>
+    <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+   </ul>
+  </nav>
+ </div>
+</header>
+<main class="contenedor">
+ <section>
+  <h1>Contacto</h1>
+  <p>Si quieres hablar sobre prácticas, empleo o un proyecto, escríbeme. También puedes <a href="data/cv.pdf">descargar mi hoja de vida en PDF</a>.</p>
+  <form id="form-contacto" action="mailto:juanandres.silva.dev@gmail.com" method="post" enctype="text/plain">
+   <div><label for="nombre">Nombre</label><input id="nombre" name="nombre" required></div>
+   <div><label for="correo">Tu correo</label><input id="correo" name="correo" type="email" required></div>
+   <div><label for="mensaje">Mensaje</label><textarea id="mensaje" name="mensaje" rows="5" required></textarea></div>
+   <button class="enviar" type="submit">Enviar mensaje</button>
+   <p id="estado" role="status"></p>
+  </form>
+ </section>
+</main>
+<footer>
+ <div class="contenedor">
+  <p>© <span id="anio"></span> Juan Andrés Silva Hernández. Bogotá, Colombia.</p>
+  <p><a href="https://github.com/jasilvahdev">GitHub</a> · <a href="https://www.linkedin.com/in/juan-andres-silva-hernandez-543177416/">LinkedIn</a> · <a href="mailto:juanandres.silva.dev@gmail.com">juanandres.silva.dev@gmail.com</a></p>
+ </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
